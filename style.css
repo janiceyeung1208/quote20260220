@@ -1,0 +1,17 @@
+:root{--bg:#0f172a;--fg:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8;--accent2:#f472b6}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji"}
+.container{max-width:720px;margin:0 auto;padding:40px 24px}
+h1{margin:0 0 24px;font-size:28px}
+.controls{display:flex;gap:12px;margin-bottom:24px}
+.controls button{appearance:none;border:0;border-radius:8px;padding:12px 16px;font-weight:600;cursor:pointer;transition:transform .05s ease,opacity .15s ease}
+#btn-happy{background:var(--accent);color:#001b24}
+#btn-unhappy{background:var(--accent2);color:#2b0419}
+.controls button:active{transform:scale(0.98)}
+.reset-bar{display:flex;justify-content:flex-start;margin:0 0 12px}
+.reset-bar button{appearance:none;border:0;border-radius:8px;padding:10px 14px;background:#f59e0b;color:#2b1700;font-weight:700;cursor:pointer}
+.quote{min-height:140px;border:1px solid #223;border-radius:12px;padding:16px 18px;background:#111827}
+.quote .zh{font-size:18px;margin:0 0 8px}
+.quote .en{font-size:16px;color:var(--muted);margin:0}
+.hidden{display:none !important}
